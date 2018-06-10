@@ -1,5 +1,8 @@
 body {
-    background-color: rgba(143, 221, 235, 0.61);
+    background-image: url(baggrund%202.png);
+    background-repeat: repeat;
+    background-size: 100%;
+
 }
 
 li {
@@ -11,20 +14,20 @@ ul {
     margin: 0;
     padding: 0;
 
-    background: skyblue;
+    background: rgba(104, 189, 224, 0.48);
     width: 100%;
 }
 
 li a {
     display: block;
-    color: white;
+    color: #4e4a4a;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #6bb2d8;
+    background-color: rgba(107, 178, 216, 0.62);
 }
 
 
@@ -32,7 +35,7 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 35%;
 }
 
 /*
@@ -44,12 +47,12 @@ li a:hover {
 }
 */
 
-nav {
+nav a {
     font-family: 'Shadows Into Light', cursive;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 2.0em;
 
 }
 
@@ -84,7 +87,8 @@ nav ul li {
 .dropdown > ul {
     display: none;
     position: absolute;
-    background-color: skyblue;
+    background-color: rgba(104, 189, 224, 0.9);
+    ;
     /*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
     padding: 1px 1px;
     z-index: 1;
@@ -106,13 +110,25 @@ nav ul li {
 
 h1 {
     font-family: 'Shadows Into Light', cursive;
-    color: skyblue;
+    color: rgba(107, 178, 216, 0.62);
     margin-left: 12px;
     font-size: 2.5em;
 }
 
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: skyblue;
+    margin-left: 12px;
+    font-size: 2.0em;
+}
 
 p {
+    font-family: 'Open Sans', sans-serif;
+    color: #2d92b2;
+    margin-left: 12px;
+}
+
+a {
     font-family: 'Open Sans', sans-serif;
     color: #2d92b2;
     margin-left: 12px;
@@ -143,5 +159,77 @@ p {
 
 .ikontxt {
     flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tema {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+/*
+.tema {
+    border-radius: 25px;
+    background: skyblue;
+    padding: 20px;
+    width: 50%;
+    height: 200px;
+    margin: 10px;
+
+}
+*/
+
+.tema img {
+    width: 50%;
+
+}
+
+.tema img {
+    border: 15px solid skyblue;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    margin-left: 60px;
+    margin-right: 20px;
+
+}
+
+.tema img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.cv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cvbillede {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+.cvtxt {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+.animation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animation txt {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+.animationimg {
+    flex-basis: 500px;
     flex-grow: 1;
 }
